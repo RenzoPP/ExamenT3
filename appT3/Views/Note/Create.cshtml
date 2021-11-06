@@ -2,5 +2,29 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+@model Note;
+
+<div class="row">
+    <div class="col-6 offset-3">
+        <h1 class="text-white">Nueva nota</h1>
+
+        <form method="post" action="@Url.Action("Create", "Note")">
+            <div class="form-group">
+                <label class="text-white">Titulo</label>
+                <input type="text" class="form-control" name="Title" value="@Model.Title" />
+                @Html.ValidationMessage("Title", new { @style = "color:white" })
+            </div>
+
+            <div class="form-group">
+                <label for="Content" class="text-white">Contenido</label>
+                <textarea id="Content" class="form-control" name="Content" value="" rows="3"></textarea>
+                @Html.ValidationMessage("Content", new { @style = "color:white" })
+            </div>
+
+            <button class="btn btn-note">Guardar</button>
+        </form>
+
+        @Html.ActionLink("Volver", "Index", null, null, new { @class = "btn btn-note mt-1" })
+    </div>
+</div>
 

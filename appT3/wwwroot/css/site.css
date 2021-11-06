@@ -70,7 +70,31 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+.bg-note {
+    background: #1c2425;
+}
+
+.note-item {
+    border-top: 1px solid #21272b;
+}
+
+.note-content {
+    max-width: 50ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .text-content {
-    color: #e5e5e5 !important;
+    color: #b7b6b5 !important;
+}
+
+.badge-white{
+    color: white !important;
+}
+
+.btn-note {
+    background: #2271b1;
+    color: white;
 }
 

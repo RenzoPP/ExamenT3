@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Edit";
+}
+
+@model Note;
+
+<div class="row">
+    <div class="col-6 offset-3">
+        <h1 class="text-white">Editar nota</h1>
+
+        <form method="post" action="@Url.Action("Edit", "Note")">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="form-group">
+                <label class="text-white">Titulo</label>
+                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessage("Title", new { @style = "color:white" })
+            </div>
+
+            <div class="form-group">
+                <label for="Content" class="text-white">Contenido</label>
+                @Html.TextAreaFor(model => model.Content, new { @id = "Content", @class = "form-control", @rows = 3 })
+                @Html.ValidationMessage("Content", new { @style = "color:white" })
+            </div>
+
+            <button class="btn btn-note">Guardar</button>
+        </form>
+
+        @Html.ActionLink("Volver", "Index", null, null, new { @class = "btn btn-note mt-1" })
+    </div>
+</div>
+
+

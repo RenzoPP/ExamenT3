@@ -1,7 +1,6 @@
 ﻿using appT3.Db;
 using appT3.Models;
 using appT3.ViewModels.QueryModels;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -10,9 +9,11 @@ namespace appT3.Repositories
     public interface INoteRepository
     {
         List<Note> GetAll();
+        Note GetNote(int Id);
         void Create(Note note);
         List<Note> GetNotesByQuery(NoteQuery query);
-        void Delete(Note note);
+        void Update(Note note);
+        void Delete(int Id);
     }
     public class NoteRepository : INoteRepository
     {
@@ -29,15 +30,21 @@ namespace appT3.Repositories
             context.SaveChanges();
         }
 
-        public void Delete(Note note)
+        public void Delete(int Id)
         {
-            context.Notes.Remove(note);
+            var note = GetNote(Id);
+            context.Remove(note);
             context.SaveChanges();
         }
 
         public List<Note> GetAll()
         {
             return context.Notes.ToList();
+        }
+
+        public Note GetNote(int Id)
+        {
+            return context.Notes.Find(Id);
         }
 
         public List<Note> GetNotesByQuery(NoteQuery query)
@@ -54,6 +61,12 @@ namespace appT3.Repositories
             }
 
             return queryable.ToList();
+        }
+
+        public void Update(Note note)
+        {
+            context.Update(note);
+            context.SaveChanges();
         }
     }
 }
