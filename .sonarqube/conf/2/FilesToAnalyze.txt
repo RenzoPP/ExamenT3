@@ -1,0 +1,9 @@
+﻿C:\Users\renzo\Desktop\appT3\appT3UnitTest\Controllers\NoteControllerTest.cs
+C:\Users\renzo\Desktop\appT3\appT3UnitTest\Repositories\Mocks\T3AppContextMock.cs
+C:\Users\renzo\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\renzo\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\renzo\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\renzo\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.dll
+C:\Users\renzo\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.api.dll
+C:\Users\renzo\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\renzo\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.dll

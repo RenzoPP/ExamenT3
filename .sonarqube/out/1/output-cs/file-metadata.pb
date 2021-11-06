@@ -1,0 +1,14 @@
+I
+@C:\Users\renzo\Desktop\appT3\appT3\Controllers\HomeController.csutf-8I
+@C:\Users\renzo\Desktop\appT3\appT3\Controllers\NoteController.csutf-8>
+5C:\Users\renzo\Desktop\appT3\appT3\Db\Maps\NoteMap.csutf-8>
+5C:\Users\renzo\Desktop\appT3\appT3\Db\T3AppContext.csutf-8D
+;C:\Users\renzo\Desktop\appT3\appT3\Models\ErrorViewModel.csutf-8:
+1C:\Users\renzo\Desktop\appT3\appT3\Models\Note.csutf-86
+-C:\Users\renzo\Desktop\appT3\appT3\Program.csutf-8J
+AC:\Users\renzo\Desktop\appT3\appT3\Repositories\NoteRepository.csutf-86
+-C:\Users\renzo\Desktop\appT3\appT3\Startup.csutf-8O
+FC:\Users\renzo\Desktop\appT3\appT3\ViewModels\QueryModels\NoteQuery.csutf-8t
+iC:\Users\renzo\Desktop\appT3\appT3\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.csutf-8[
+PC:\Users\renzo\Desktop\appT3\appT3\obj\Debug\netcoreapp3.1\appT3.AssemblyInfo.csutf-8`
+UC:\Users\renzo\Desktop\appT3\appT3\obj\Debug\netcoreapp3.1\appT3.RazorAssemblyInfo.csutf-8
